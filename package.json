@@ -1,0 +1,28 @@
+{
+    "name": "js-tutorial-game",
+    "version": "1.0.0",
+    "description": "Tutorial game",
+    "main": "public/index.html",
+    "scripts": {
+        "start": "nodemon npm run lite",
+        "bundle": "webpack",
+        "serve": "webpack serve",
+        "test": "echo \"Error: no test specified\" && exit 1",
+        "prettier": "prettier . --write"
+    },
+    "author": "",
+    "license": "ISC",
+    "dependencies": {
+        "lodash": "^4.17.21"
+    },
+    "devDependencies": {
+        "css-loader": "^6.8.1",
+        "prettier": "3.0.0",
+        "style-loader": "^3.3.3",
+        "ts-loader": "^9.4.4",
+        "typescript": "^5.1.6",
+        "webpack": "^5.88.2",
+        "webpack-cli": "^5.1.4",
+        "webpack-dev-server": "^4.15.1"
+    }
+}
