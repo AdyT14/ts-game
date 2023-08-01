@@ -1,4 +1,5 @@
 import { canvasProperties } from '../canvasProperties'
+import { getPlayer } from './object-manager'
 
 let secondsPassed: number
 let oldTimeStamp: number
@@ -38,5 +39,11 @@ const showFps = (timeStamp: number) => {
 }
 
 const gameLogic = () => {
-    console.log('Game logic running...')
+    const player = getPlayer()
+    player.draw()
+    player.posX = player.posX + 0.5
+
+    if (player.posX > 300) {
+        player.shouldDraw = false
+    }
 }
