@@ -8,7 +8,6 @@ let fps: number
 export const gameLoop = (timestamp: number) => {
     drawBackground()
     showFps(timestamp)
-
     gameLogic()
 
     window.requestAnimationFrame(gameLoop)
@@ -41,9 +40,4 @@ const showFps = (timeStamp: number) => {
 const gameLogic = () => {
     const player = getPlayer()
     player.draw()
-    player.posX = player.posX + 0.5
-
-    if (player.posX > 300) {
-        player.shouldDraw = false
-    }
 }

@@ -4,7 +4,6 @@
     "description": "Tutorial game",
     "main": "public/index.html",
     "scripts": {
-        "start": "nodemon npm run lite",
         "bundle": "webpack",
         "serve": "webpack serve",
         "test": "echo \"Error: no test specified\" && exit 1",
