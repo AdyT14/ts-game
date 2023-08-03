@@ -1,5 +1,6 @@
 import { canvasProperties } from '../canvasProperties'
 import { getPlayer } from './object-manager'
+import { Player } from '../caracters/player'
 
 let secondsPassed: number
 let oldTimeStamp: number
@@ -39,5 +40,5 @@ const showFps = (timeStamp: number) => {
 
 const gameLogic = () => {
     const player = getPlayer()
-    player.draw()
+    player.run()
 }

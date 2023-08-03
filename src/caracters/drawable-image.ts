@@ -1,6 +1,6 @@
 import { canvasProperties } from '../canvasProperties'
 
-export class DrawableImage {
+export abstract class DrawableImage {
     posX: number
     posY: number
     width: number
@@ -36,4 +36,6 @@ export class DrawableImage {
             this.context.drawImage(this.image, 0, 0, this.width / 2, this.height / 2, this.posX, this.posY, this.height, this.width)
         }
     }
+
+    abstract run(): void
 }

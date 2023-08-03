@@ -1,6 +1,6 @@
 export const canvasProperties: CanvasProperties = {
-    width: 500,
-    height: 500,
+    width: 512,
+    height: 512,
     canvas: undefined,
     context: undefined,
 }
